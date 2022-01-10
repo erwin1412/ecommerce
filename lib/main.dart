@@ -1,3 +1,4 @@
+import 'package:ecommerce/pages/home/main_page.dart';
 import 'package:ecommerce/pages/sign_in_page.dart';
 import 'package:ecommerce/pages/sign_up_page.dart';
 import 'package:ecommerce/pages/splash_page.dart';
@@ -15,7 +16,8 @@ class MyApp extends StatelessWidget {
       routes: {
         '/': (context) => SplashPage(),
         '/sign-in': (context) => SignInPage(),
-        '/sign-up': (contaxt) => SignUpPage(),
+        '/sign-up': (context) => SignUpPage(),
+        '/home': (context) => MainPage(),
       },
     );
   }
