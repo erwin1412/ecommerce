@@ -1,4 +1,6 @@
 import 'package:ecommerce/theme.dart';
+import 'package:ecommerce/widgets/product_card.dart';
+import 'package:ecommerce/widgets/product_card1.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
@@ -163,12 +165,54 @@ class _HomePageState extends State<HomePage> {
     );
   }
 
+  Widget judul() {
+    return Container(
+      margin: EdgeInsets.only(
+        top: defaultMargin,
+        left: defaultMargin,
+        right: defaultMargin,
+      ),
+      child: Text(
+        'Products Unggulan',
+        style: priceTextStyle.copyWith(
+          fontWeight: semiBold,
+          fontSize: 20,
+        ),
+      ),
+    );
+  }
+
+  Widget products() {
+    return Container(
+      margin: EdgeInsets.only(top: 14),
+      child: SingleChildScrollView(
+          scrollDirection: Axis.horizontal,
+          child: Row(
+            children: [
+              SizedBox(
+                width: defaultMargin,
+              ),
+              Row(
+                children: [
+                  ProductCard(),
+                  ProductCard1(),
+                  ProductCard(),
+                  ProductCard1(),
+                ],
+              ),
+            ],
+          )),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return ListView(
       children: [
         header(),
         categories(),
+        judul(),
+        products(),
       ],
     );
   }
