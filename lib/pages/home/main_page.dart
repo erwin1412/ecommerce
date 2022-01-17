@@ -48,9 +48,8 @@ class _MainPageState extends State<MainPage> {
                 icon: Container(
                   margin: EdgeInsets.only(top: 20, bottom: 10),
                   child: Icon(Icons.shopping_bag_sharp,
-                      color: currentIndex == 0
-                          ? Color(0xffffffff)
-                          : Color(0xff808191)),
+                      color:
+                          currentIndex == 0 ? primaryColor : Color(0xff808191)),
                 ),
                 label: '',
               ),
