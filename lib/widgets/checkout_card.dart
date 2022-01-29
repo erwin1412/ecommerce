@@ -24,6 +24,39 @@ class CheckoutCard extends StatelessWidget {
               ),
             ),
           ),
+          SizedBox(width: 12),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  'Terrex Urban Law',
+                  style: primaryTextStyle.copyWith(
+                    fontWeight: semiBold,
+                  ),
+                  overflow: TextOverflow.ellipsis,
+                ),
+                SizedBox(
+                  height: 8,
+                ),
+                Text(
+                  '\$143,98',
+                  style: priceTextStyle.copyWith(
+                    fontWeight: semiBold,
+                  ),
+                ),
+              ],
+            ),
+          ),
+          Center(
+            child: Text(
+              '2 items',
+              style: subtitleTextStyle.copyWith(
+                fontWeight: semiBold,
+                fontSize: 16,
+              ),
+            ),
+          ),
         ],
       ),
     );

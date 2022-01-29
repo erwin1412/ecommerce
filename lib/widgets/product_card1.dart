@@ -38,14 +38,14 @@ class ProductCard1 extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    'Category Item',
+                    'Sport',
                     style: secondaryTextStyle.copyWith(
                       fontSize: 12,
                     ),
                   ),
                   SizedBox(height: 6),
                   Text(
-                    'Nama Item',
+                    'Sepatu Batman',
                     style: blackTextStyle.copyWith(
                       fontSize: 18,
                       fontWeight: semiBold,
@@ -57,7 +57,7 @@ class ProductCard1 extends StatelessWidget {
                     height: 6,
                   ),
                   Text(
-                    '\Rp.xxx',
+                    '\$167,83',
                     style: priceTextStyle.copyWith(
                         fontSize: 14, fontWeight: medium),
                   )

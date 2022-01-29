@@ -50,7 +50,7 @@ class ProductTile extends StatelessWidget {
                     height: 6,
                   ),
                   Text(
-                    'Rp 123.11',
+                    '\$153',
                     style: priceTextStyle.copyWith(
                       fontWeight: medium,
                     ),
